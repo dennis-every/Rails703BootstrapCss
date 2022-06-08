@@ -3,6 +3,8 @@
 
 <div class="clearfix"></div><br>
 
+<h1>Bootstrap modal demo</h1>
+
 <!-- Button trigger modal -->
 <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
   Launch demo modal
@@ -26,3 +28,36 @@
     </div>
   </div>
 </div>
+
+<div class="clearfix"></div><br>
+<h1>Stimulus demo</h1>
+<div data-controller="hello">
+  <input data-hello-target="name" type="text">
+  <button data-action="click->hello#greet">Greet</button>
+</div>
+
+<div class="clearfix"></div><br>
+<h1>Stimulus clipboard demo</h1>
+
+<div data-controller="clipboard">
+  PIN: <input data-clipboard-target="source" type="text" value="1234" readonly>
+  <button data-action="clipboard#copy">Copy to clipboard</button>
+</div>
+
+<div data-controller="clipboard">
+  PIN: <input data-clipboard-target="source" type="text" value="3737" readonly>
+  <button data-action="clipboard#copy">Copy to clipboard</button>
+</div>
+
+<div data-controller="clipboard">
+  <!-- PIN: <input data-clipboard-target="source" type="text" value="3838" readonly> -->
+  PIN: <textarea data-clipboard-target="source" name="name" rows="8" cols="80">3939</textarea>
+  <a href="#" data-action="clipboard#copy">Copy to clipboard</a>
+</div>
+
+
+<div class="clearfix"></div>
+<br>
+<br>
+<br>
+<br>
